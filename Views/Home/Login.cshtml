@@ -1,0 +1,80 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .bodyBackGround{
+    background-image: url("pic1.png");
+    background-size: 1536px auto;
+    background-repeat: no-repeat;
+  }
+  .inputBox{
+    background: #fde7c6;
+    width: 410px;
+    height: 50px;
+    border: 2px solid #fde7c6;
+    border-radius: 15px;
+    padding-left: 10px;
+  }
+
+  .inputBox::placeholder{
+    color: #8f684d;
+    font-size: 15px;
+  }
+
+  .inputPositionBox{
+    position: relative;
+    top: 439px;
+    left: 80px;
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  button:hover {
+    filter: brightness(90%);
+  }
+
+  .loginSubmitButton{
+    position: relative;
+    width: 220px;
+    height: 60px;
+    top: 19px;
+    left: 1px;
+    background: #fcc63d;
+    border: 2px solid #fcc63d;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: Poppins,serif ;
+    font-size: 23px;
+    color: #5b2e1a;
+    text-align: center;
+    align-items: center;
+  }
+
+</style>
+</head>
+<body class="bodyBackGround">
+<form class="inputPositionBox" target="_self" method="post" autocomplete="on">
+  <div style="margin-bottom: 20px">
+    <input required class="inputBox" type="text" placeholder="User Name">
+  </div>
+  <div>
+    <input required class="inputBox" type="text" placeholder="Password">
+  </div>
+
+  <button class="loginSubmitButton" type="submit" asp-controller="Home" asp-action="Dashboard">Login</button>
+</form>
+
+</body>
+
+</html>
