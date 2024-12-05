@@ -1,0 +1,8 @@
+# .NET Core build files
+bin/
+obj/
+# ASP.NET Core
+wwwroot/lib/
+appsettings.json
+appsettings.Development.json
+.gitignore

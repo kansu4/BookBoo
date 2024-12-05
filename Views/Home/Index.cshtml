@@ -1,0 +1,30 @@
+﻿@model List<BookBoo.Models.Author>;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Number</th>
+            <th>ISBN</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+            {
+
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.OrderingNumber</td>
+                    <td>@item.ISBN</td>
+                </tr>
+            }
+    </tbody>
+</table>
